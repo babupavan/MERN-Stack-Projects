@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const Connection = async (username, password) => {
-    const URL = `mongodb+srv://${username}:${password}@whatsapp-clone.fqers4o.mongodb.net/`;
+    const URL = `mongodb+srv://babu:babu@babu.oj2jyug.mongodb.net/?retryWrites=true&w=majority&appName=babu/`;
     try {
         await mongoose.connect(URL, { useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false });
         console.log('Database Connected Succesfully');
